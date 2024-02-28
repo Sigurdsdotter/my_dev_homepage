@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         /* Alla boxes, t ex HTML, CSS, JS + fyll i rutan får mer fast mått som man bestämt. Utan så får elementen  mått efter default, vilket inkluderar padding etc och elementen blir större än man tänkt*/
+}
+
+body {
+    font-family: 'Open+Sans', Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.my-divs {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    visibility: hidden;
+    position: absolute;         /* Samma som display: none*/
+}
+
+.arrow-down::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    
+    top: 35rem;             /* 4 koder som centrerar iconen nere i mitten*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-right: 4px solid rgba(255,255,255,0.7);
+    border-bottom: 4px solid rgba(255,255,255,0.7);
+    transform: rotate(45deg);
+
+    cursor: pointer;
+
+}
+
+.arrow-up::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    
+    top: 35rem;             /* 4 koder som centrerar iconen nere i mitten*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-right: 4px solid rgba(255,255,255,0.7);
+    border-bottom: 4px solid rgba(255,255,255,0.7);
+    transform: rotate(225deg);
+
+    cursor: pointer;
+}
+
+
+#div1 {
+    background-color: rgb(137, 170, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    text-align: center;
+    position: relative;
+}
+
+#div1 h1 {
+    margin: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgb(0,0,0,1);
+}
+
+#div1 i {
+    color: #fff;
+    text-shadow: 1px 1px 5px rgb(0,0,0,1);
+    font-size: 1.5rem;
+}
+
+#div1 p {
+    color: #fff;
+    margin-top: 2rem;
+    text-shadow: 1px 1px 5px rgb(0,0,0,1);
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 1.2rem;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* Behövs inte justify-content: center; då det redan är vertikalt centrerat. */
+    margin-bottom: 3rem;
+}
+
+.img-div div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-div div img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    background-image: url(img/laptop-2620118_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2 div {
+    background-color:  rgba(3,3,3,0.4);
+    /*    background-color:  rgba(137, 170, 129, 0.5); */
+    height: 100vh;
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#div2 div img {
+    height: 100px;
+    width: 100px;
+    margin-top: 10%;
+}
+
+#div2 div h1 {
+    color: #fff;
+    margin: 30px auto 30px;         /* 30px auto 30px= top left+right bottom */
+}
+
+#div2 div p {
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 0.5;
+    font-size: 1.2rem;
+    margin: 30px auto 30px;         /* 30px auto 30px= top left+right bottom */
+}
+
+#div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(137, 170, 129);
+    text-align: center;
+    position: relative;
+    padding: 0px 10% 0px;
+}
+
+#skill_title {
+    width: 100%;
+    padding: 50px;
+}
+
+#skill_title h1, .skills h3, .skills p {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(26,25,25,0.5);
+}
+
+.skills h3, .skills p {
+    margin-top: 20px;
+}
+
+#skills_wrap {
+    display:inline;
+}
+
+.skills {
+background-color: rgb(44, 42, 42);
+border: 1px solid black;
+width: 30%;
+margin: 5px 5px 20px;
+padding: 25px;
+height: auto;
+display: inline-block;
+}
+
+.skills img {
+    width: 50%;
+    height: auto;
+}
+
+#div4 {
+    background-image: url(img/laptop-2620118_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#div4 h1, #div4 p {
+    color: #fff;
+    text-shadow: 2px 2px2px rgba(3,3,3,1);
+}
+
+#div4 h1 {
+    margin: 45px;
+}
+
+#div4 p {
+    margin: 20px;
+}
+
+#div4 p {
+    font-size: 1.5rem;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+form input, form textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form textarea {
+    font-family: inherit;       /* Utan denna kod blir det default font */
+    font-size: 1.2rem;
+}
+
+form textarea:focus {
+    outline: none;
+}
+
+form button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in;
+}
+
+form button:hover {
+    background-color: rgb(63, 60, 60);
+    color: #fff;
+}
+
+
+@media(max-width: 600px) {
+    .skills {
+        width: 70%;
+        height: ;
+    }
+
+    .skills-wrap {
+        overflow: auto;
+    }
+}
+
+@media(max-width: 450px) {
+    .arrow-down {
+        display: none;
+    }
+
+    .arrow-up {
+        display: none;
+    }
+}
+
+
+
+
