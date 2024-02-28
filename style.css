@@ -32,7 +32,7 @@ html {
     position: absolute;
     margin: auto;
     
-    top: 35rem;             /* 4 koder som centrerar iconen nere i mitten*/
+    top: 45rem;             /* 4 koder som centrerar iconen nere i mitten*/
     right: 0;
     bottom: 0;
     left: 0;
@@ -52,7 +52,7 @@ html {
     position: absolute;
     margin: auto;
     
-    top: 35rem;             /* 4 koder som centrerar iconen nere i mitten*/
+    top: 45rem;             /* 4 koder som centrerar iconen nere i mitten*/
     right: 0;
     bottom: 0;
     left: 0;
@@ -75,7 +75,7 @@ html {
     /* background-size: cover;
     background-repeat: no-repeat; */
     text-align: center;
-    position: relative;
+    /*position: relative;*/
 }
 
 #div1 h1 {
@@ -103,7 +103,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;        /* Behövs inte justify-content: center; då det redan är vertikalt centrerat. */
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .img-div div {
@@ -141,9 +141,9 @@ html {
 }
 
 #div2 div img {
-    height: 100px;
-    width: 100px;
-    margin-top: 10%;
+    height: 80px;
+    width: 80px;
+    margin-top: 20%;
 }
 
 #div2 div h1 {
@@ -166,7 +166,7 @@ html {
     justify-content: center;
     background-color: rgb(137, 170, 129);
     text-align: center;
-    position: relative;
+    /* position: relative; */
     padding: 0px 10% 0px;
 }
 
@@ -182,6 +182,7 @@ html {
 
 .skills h3, .skills p {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #skills_wrap {
@@ -192,7 +193,7 @@ html {
 background-color: rgb(44, 42, 42);
 border: 1px solid black;
 width: 30%;
-margin: 5px 5px 20px;
+margin: 5px 10px 20px;
 padding: 25px;
 height: auto;
 display: inline-block;
@@ -288,12 +289,27 @@ form button:hover {
 @media(max-width: 600px) {
     .skills {
         width: 70%;
-        height: ;
+    }
+
+    #skill_title {
+        width: 100%;
+        padding: 20px;
     }
 
     .skills-wrap {
         overflow: auto;
     }
+
+    .skills h3, .skills p {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .skills img {
+        width: 50%;
+        height: auto;
+    }
+
 }
 
 @media(max-width: 450px) {
@@ -304,6 +320,17 @@ form button:hover {
     .arrow-up {
         display: none;
     }
+
+    .skills h3, .skills p {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .skills img {
+        width: 50%;
+        height: auto;
+    }
+
 }
 
 
