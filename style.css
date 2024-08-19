@@ -34,7 +34,7 @@ html {
     
     top: 45rem;             /* 4 koder som centrerar iconen nere i mitten*/
     right: 0;
-    bottom: 0;
+    bottom: 5rem;
     left: 0;
 
     border-right: 4px solid rgba(255,255,255,0.7);
@@ -97,6 +97,8 @@ html {
     line-height: 2;
     letter-spacing: 0.6px;
     font-size: 1.2rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .img-div {
@@ -330,6 +332,7 @@ form button:hover {
         width: 50%;
         height: auto;
     }
+
 
 }
 
